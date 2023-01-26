@@ -3,7 +3,7 @@ require_relative 'my_enumerable'
 class MyList
   include MyEnumerable
 
-  def initialize(list)
+  def initialize(*list)
     @list = list
   end
 
@@ -12,15 +12,9 @@ class MyList
   end
 end
 
-c = MyList.new([1, 2, 4, 3, 5, 7])
+c = MyList.new(1, 2, 4, 3, 5, 7)
 c.each_num { |val| puts val }
 
-puts c.all? do |val|
-  val > 5
-end
-
-puts c.any? do |val|
-  val > 5
-end
-
+puts(c.all? { |val| val < 8 })
+puts(c.any? { |val| val > 2 })
 puts c.filter(&:even?)
