@@ -36,8 +36,6 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **Save an array of numbers in memory**
 - **Find an item based on provided criteria**
 - **Filter the array based on provided criteria**
