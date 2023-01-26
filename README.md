@@ -24,7 +24,7 @@
 
 # 📖 Enumerable <a name="about-project"></a>
 
-**Enumerable** is a simple Array Manipulator App! This project is designed to help you learn how to use a module inside a class, and how to implement a subset of the functionality of Enumerable in Ruby.
+**Enumerable** is a simple Array Manipulator App. This project is designed to help you learn how to use a module inside a class, and how to implement a subset of the functionality of Enumerable in Ruby.
 
 ## 🛠 Built With <a name="built-with"></a>
 
