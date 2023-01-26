@@ -14,6 +14,13 @@ end
 
 c = MyList.new([1, 2, 4, 3, 5, 7])
 c.each_num { |val| puts val }
-puts c.all? { |val| val < 5 }
-puts c.any? { |val| val > 1 }
-puts c.filter { |val| val.even? }
+
+puts c.all? do |val|
+  val > 5
+end
+
+puts c.any? do |val|
+  val > 5
+end
+
+puts c.filter(&:even?)
